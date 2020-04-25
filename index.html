@@ -1,0 +1,60 @@
+<!--
+Desenvolvidor por: Kaio Rocha Ribeiro
+Data: 24/02/2020
+Processo Seletivo: Vitto Caixa Eletrônico
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="https://sistemavitto.com.br/_assets/img/favicon.ico">
+  <title>Terminal Vitto</title>
+</head>
+<body>
+  <div class="container">
+
+      <div class="box">
+
+        <strong class="content-strong">
+          Vitto Caixa Eletrônico
+        </strong>
+
+        <span class="content-span">
+          Seja bem-vindo
+        </span>
+
+        <div class="logo">
+
+          <img src="assets/atm.svg" alt=""> 
+
+         </div>
+
+        <div class="container controller">
+
+          <!--recebe o valor como parâmetro para iniciar a função-->
+          <input id="vlSaque" class="calc" type="number" placeholder="Qual valor deseja sacar ?">
+
+          <!--Chama a função-->
+          <button class="enviar" type="button" onclick="caixaEletronico()">
+            Saque
+          </button>
+
+          <!--Será retornado o resultado de toda operação com a contagem das notas-->
+          <div id="resultCalc">
+
+          </div>
+        </div>
+
+        <div class="box-footer">
+          <span class="content-span">
+            Feito com ❤️️ por <a href="https://github.com/kaiorr" target="_blank">Kaio Ribeiro</a>
+          </span>
+        </div> 
+    </div>
+  </div>
+  <script src="caixa-eletronico.js" ></script>
+</body>
+</html>

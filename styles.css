@@ -1,0 +1,176 @@
+/* 
+Desenvolvidor por: Kaio Rocha Ribeiro
+Data: 24/02/2020
+Processo Seletivo: Vitto Caixa Eletrônico
+*/
+
+html, body {
+  background: #4e6f96;
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  height: 100%;
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container strong.content-strong {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  padding: 5px;
+  font-weight: bold;
+  color: #0896f7;
+}
+
+.container span.content-span{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: darkgray;
+  padding: 8px;
+}
+
+.container .controller {
+  width: 450px;
+  height: 100%;
+  background: #e6ecf0;
+  border-radius: 0 0 16px 16px;
+}
+
+.container .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 45%;
+  background: rgba(0, 0, 0, .30);
+  border-radius: 16px;
+}
+
+.container .controller input {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: 4px solid rgba(0, 0, 0, .50);
+  padding: 25px;
+  border-radius: 16px;
+  outline: none;
+}
+
+.container .controller input:focus {
+  border: 4px solid #0896f7;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 1s ease;
+  outline: none;
+  background-position: left 0px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none; 
+}
+
+#resultCalc {
+  margin: 5px;
+  width: 440px;
+  height: 100%;
+}
+
+#resultCalc p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.logo {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6ecf0;
+  border-radius: 16px 16px 0 0 ;
+  width: 450px;
+  height: 1.em;
+
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.controller button.enviar {
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    height: 35px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #0896f7;
+    border: 2px solid rgba(0, 0, 0, .50);
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .controller button.enviar:hover {
+  outline: none;
+  margin: 10px;
+  padding: 10px;
+  height: 35px;
+  width: 120px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #fff;
+  border: 2px solid rgba(0, 0, 0, .50);
+  background: #0896f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-footer a {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0a244d;
+  margin: 5px;
+}
+
+.box-footer a:hover {
+  transition-property: color;
+  transition-duration: 1.5s;
+  font-size: 23px;
+  color: #47a8e8;
+}
