@@ -3,20 +3,8 @@
 </p>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/kaiorr/caixaEletronicoJS?style=plastic">
-
   <a href="https://www.linkedin.com/in/kaio-ribeiro-310123150/"> 
     <img alt="Made by Kaio" src="https://img.shields.io/badge/made%20by-kaiorr-%2304D361">
-  </a>
-  
-  <img alt="GitHub" src="https://img.shields.io/github/license/kaiorr/caixaEletronicoJS?color=7800ff&style=plastic">
-
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/kaiorr/caixaEletronicoJS?color=7800ff&style=plastic">
-
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/kaiorr/caixaEletronicoJS?color=7800ff&style=plastic">
-
-  <a href="https://github.com/kaiorr/caixaEletronicoJS/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/kaiorr/caixaEletronicoJS?style=social">
   </a>
 </p>
 
