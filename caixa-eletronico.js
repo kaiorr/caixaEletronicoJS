@@ -19,25 +19,25 @@ function caixaEletronico(){
 	for (i = 0; i < notas.length; i++) {
 
     //Utilizando o resto da divisão por 10, já é possível tratar tanto 50, quanto o 10
-		if ((valorSaque % 10) == 0 ){
+		if (valorSaque <= 10000 && (valorSaque % 10) == 0 ) {
 			if (valorSaque >=notas[i]) {
-				result = result  + parseInt (valorSaque/notas[i])+" Nota(s) de R$:"+notas[i] + "<br>";
+				result = result  + parseInt (valorSaque/notas[i])+" Nota(s) de R$ "+notas[i] + "<br>";
 				ident = true;
 				valorSaque = valorSaque % notas[i];
       }
 
       //Resto da divisão para notas de 5
-		} else if ((valorSaque % 5) == 0 ) {
+		} else if (valorSaque <= 10000 && (valorSaque % 5) == 0 ) {
 			if (valorSaque >=notas[i]) {
-				result = result  + parseInt (valorSaque/notas[i])+" Nota(s) de R$:"+notas[i] + "<br>";
+				result = result  + parseInt (valorSaque/notas[i])+" Nota(s) de R$ "+notas[i] + "<br>";
 				ident = true;
 				valorSaque = valorSaque % notas[i];
       }
 
       //resto da divisão por notas de 1
-		} else if ((valorSaque % 1) == 0 ) {
+		} else if (valorSaque <= 10000 && (valorSaque % 1) == 0 ) {
 			if (valorSaque >=notas[i]) {
-				result = result  + parseInt (valorSaque/notas[i])+" Nota(s) de R$:"+notas[i] + "<br>";
+				result = result  + parseInt (valorSaque/notas[i])+" Nota(s) de R$ "+notas[i] + "<br>";
 				ident = true;
 				valorSaque = valorSaque % notas[i];
       }
@@ -47,14 +47,23 @@ function caixaEletronico(){
 			ident = false;
 			break;
 		}
-  }
-  //se tudo deu certo, faz impressão do resultado dentro da div id "resultCalc"
+	}
+	
+  //se tudo deu certo, faz impressão da contagem das notas
 	if (ident == true) {
 		document.getElementById("resultCalc").innerHTML = `<p>${result}</p>` + "<br>";
-  }
-  //validação para informar um valor para executar o saque
-	else {
-		document.getElementById("resultCalc").innerHTML = "<p>Digite o valor para o saque</p>"
+	}
+	
+  //validação do valor máximo para ser sacado
+	else if (valorSaque > 10000) {
+
+		document.getElementById("resultCalc").innerHTML = "<p>Valor máximo para saque é R$ 10.000</p>"
+
+		//valida se não digitou nada no input e também se é valor negativo
+	} else if (valorSaque < 1) {
+		
+		document.getElementById("resultCalc").innerHTML = "<p> Valor mínimo para saque é R$ 1.00</p>"
+
 	}
 }
 
