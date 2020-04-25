@@ -33,7 +33,7 @@ Caso o cliente tenha pedido R$8,00, o caixa eletrônico deverá devolver 1 nota 
 
 ## 📝 Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://raw.githubusercontent.com/kaiorr/caixaEletronicoJS/master/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/kaiorr/caixaEletronicoJS/blob/master/LICENSE) para mais detalhes.
 
 ----
 
