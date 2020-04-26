@@ -9,7 +9,8 @@ sendo assim resultando na quantidade de notas emitidas para cada valor. Para ess
 utilizado um For para percorrer o Array das cédulas e para cada cédula tem uma condição
 para calcular a qtd de cada nota.
  */
-function caixaEletronico(){
+
+ function caixaEletronico(){
 
 	let valorSaque = document.getElementById('vlSaque').value
   let notas = [50,10,5,1]
